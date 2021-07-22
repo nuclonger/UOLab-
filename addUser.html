@@ -47,7 +47,7 @@ $(document).ready(function(e) {
 	function checkPassword(){
 		var uname = document.getElementById("Password").value;
 		var unameTip = document.getElementById("passwordTip")
-		var reg=/^[a-zA-Z]{1}[a-zA-Z0-9]{5,19}$/;
+		var reg=/^[a-zA-Z0-9]{6,20}$/;
 		if(!reg.test(uname)){
 			unameTip.innerHTML="密码不合法!";
 			unameTip.style="color:red";
