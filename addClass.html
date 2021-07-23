@@ -34,7 +34,7 @@ $(document).ready(function(e) {
 	function checkJszt(){
 		var uname = document.getElementById("Jszt").value;
 		var unameTip = document.getElementById("jsztTip")
-		var reg=/^[\u4e00-\u9fa5_a-zA-Z0-9_]{1,50}$/;
+		var reg=/^[\u4e00-\u9fa5_a-zA-Z_]{1,50}$/;
 		if(!reg.test(uname)){
 			unameTip.innerHTML="名称不合法!";
 			unameTip.style="color:red";
