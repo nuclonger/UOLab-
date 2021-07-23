@@ -35,7 +35,7 @@
 			function checkName(){
 		var uname = document.getElementById("Name").value;
 		var unameTip = document.getElementById("nameTip")
-		var reg=/^[a-zA-Z]{1}[a-zA-Z0-9]{2,14}$/;
+		var reg=/^[\u4e00-\u9fa5]{2,5}$/;
 		if(!reg.test(uname)){
 			unameTip.innerHTML="姓名不合法!";
 			unameTip.style="color:red";
